@@ -9,29 +9,28 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    @IBOutlet weak var textField1: UITextField!
-    @IBOutlet weak var textField2: UITextField!
-    @IBOutlet weak var textField3: UITextField!
-    @IBOutlet weak var textField4: UITextField!
-    @IBOutlet weak var textField5: UITextField!
-    
-    @IBOutlet weak var resultLabel: UILabel!
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-    }
+    @IBOutlet private weak var textField1: UITextField!
 
-    @IBAction func addButton(_ sender: Any) {
-        let text1 = Int(textField1.text ?? "0") ?? 0
-        let text2 = Int(textField2.text ?? "0") ?? 0
-        let text3 = Int(textField3.text ?? "0") ?? 0
-        let text4 = Int(textField4.text ?? "0") ?? 0
-        let text5 = Int(textField5.text ?? "0") ?? 0
+    @IBOutlet private weak var textField2: UITextField!
+
+    @IBOutlet private weak var textField3: UITextField!
+
+    @IBOutlet private weak var textField4: UITextField!
+
+    @IBOutlet private weak var textField5: UITextField!
+    
+    @IBOutlet private weak var totalLabel: UILabel!
+
+    @IBAction private func addButton(_ sender: Any) {
+        let textNum1 = Double(textField1.text ?? "0.0") ?? 0.0
+        let textNum2 = Double(textField2.text ?? "0.0") ?? 0.0
+        let textNum3 = Double(textField3.text ?? "0.0") ?? 0.0
+        let textNum4 = Double(textField4.text ?? "0.0") ?? 0.0
+        let textNum5 = Double(textField5.text ?? "0.0") ?? 0.0
         
-        let result = String(text1 + text2 + text3 + text4 + text5)
-        
-        resultLabel.text = result
+        let totalNum = String(textNum1 + textNum2 + textNum3 + textNum4 + textNum5)
+
+        totalLabel.text = totalNum
     }
 
 }

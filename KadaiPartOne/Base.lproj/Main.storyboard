@@ -108,12 +108,12 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="resultLabel" destination="96A-MY-qKI" id="TAi-Kf-Qai"/>
                         <outlet property="textField1" destination="WPW-Zb-ljE" id="S0r-O7-kh3"/>
                         <outlet property="textField2" destination="2qW-SN-ncn" id="yjm-SX-Gng"/>
                         <outlet property="textField3" destination="Ly1-RB-Qbf" id="LEI-HS-cDn"/>
                         <outlet property="textField4" destination="Ewh-N7-8j0" id="NRH-WJ-M5G"/>
                         <outlet property="textField5" destination="lJN-ms-kIZ" id="dHM-YX-01y"/>
+                        <outlet property="totalLabel" destination="96A-MY-qKI" id="Y4k-HX-aOV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
