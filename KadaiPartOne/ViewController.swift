@@ -10,13 +10,9 @@ import UIKit
 class ViewController: UIViewController {
     
     @IBOutlet private weak var textField1: UITextField!
-
     @IBOutlet private weak var textField2: UITextField!
-
     @IBOutlet private weak var textField3: UITextField!
-
     @IBOutlet private weak var textField4: UITextField!
-
     @IBOutlet private weak var textField5: UITextField!
 
     @IBOutlet private weak var totalLabel: UILabel!
@@ -30,7 +26,12 @@ class ViewController: UIViewController {
         
         let totalNum = String(textNum1 + textNum2 + textNum3 + textNum4 + textNum5)
 
-        totalLabel.text = totalNum
+        if totalNum == "0.0" {
+            totalLabel.text = "Label"
+        }else{
+            totalLabel.text = totalNum
+        }
+        
     }
 
 }
