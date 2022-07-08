@@ -18,7 +18,7 @@ class ViewController: UIViewController {
     @IBOutlet private weak var textField4: UITextField!
 
     @IBOutlet private weak var textField5: UITextField!
-    
+
     @IBOutlet private weak var totalLabel: UILabel!
 
     @IBAction private func addButton(_ sender: Any) {
