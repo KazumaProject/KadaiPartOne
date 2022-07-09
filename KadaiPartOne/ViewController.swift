@@ -18,11 +18,11 @@ class ViewController: UIViewController {
     @IBOutlet private weak var totalLabel: UILabel!
 
     @IBAction private func sumButton(_ sender: Any) {
-        let textNum1 = Double(textField1.text ?? "") ?? 0.0
-        let textNum2 = Double(textField2.text ?? "") ?? 0.0
-        let textNum3 = Double(textField3.text ?? "") ?? 0.0
-        let textNum4 = Double(textField4.text ?? "") ?? 0.0
-        let textNum5 = Double(textField5.text ?? "") ?? 0.0
+        let textNum1 = (textField1.text! as NSString).doubleValue
+        let textNum2 = (textField2.text! as NSString).doubleValue
+        let textNum3 = (textField3.text! as NSString).doubleValue
+        let textNum4 = (textField4.text! as NSString).doubleValue
+        let textNum5 = (textField5.text! as NSString).doubleValue
 
         let totalNum = String(textNum1 + textNum2 + textNum3 + textNum4 + textNum5)
 
