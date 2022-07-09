@@ -18,15 +18,15 @@ class ViewController: UIViewController {
     @IBOutlet private weak var totalLabel: UILabel!
 
     @IBAction private func sumButton(_ sender: Any) {
-        let textNum1 = Double(textField1.text ?? "0.0") ?? 0.0
-        let textNum2 = Double(textField2.text ?? "0.0") ?? 0.0
-        let textNum3 = Double(textField3.text ?? "0.0") ?? 0.0
-        let textNum4 = Double(textField4.text ?? "0.0") ?? 0.0
-        let textNum5 = Double(textField5.text ?? "0.0") ?? 0.0
+        let textNum1 = Double(textField1.text ?? "") ?? 0.0
+        let textNum2 = Double(textField2.text ?? "") ?? 0.0
+        let textNum3 = Double(textField3.text ?? "") ?? 0.0
+        let textNum4 = Double(textField4.text ?? "") ?? 0.0
+        let textNum5 = Double(textField5.text ?? "") ?? 0.0
 
         let totalNum = String(textNum1 + textNum2 + textNum3 + textNum4 + textNum5)
 
-        if totalNum == "0.0" {
+        if totalNum == "0.0"  {
             totalLabel.text = "Label"
         }else{
             totalLabel.text = totalNum
