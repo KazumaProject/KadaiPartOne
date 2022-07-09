@@ -26,7 +26,7 @@ class ViewController: UIViewController {
 
         let totalNum = String(textNum1 + textNum2 + textNum3 + textNum4 + textNum5)
 
-        if totalNum == "0.0"  {
+        if totalNum == "0.0" {
             totalLabel.text = "Label"
         }else{
             totalLabel.text = totalNum
