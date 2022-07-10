@@ -25,7 +25,7 @@ class ViewController: UIViewController {
         let textNum4 = (textField4.text! as NSString).doubleValue
         let textNum5 = (textField5.text! as NSString).doubleValue
 
-        // Add all textFieled numbers
+        // Add all textField numbers
         let totalNum = String(textNum1 + textNum2 + textNum3 + textNum4 + textNum5)
 
         // Set "Label" when totalNum is 0.0 otherwise set totalNum
